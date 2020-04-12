@@ -79,25 +79,25 @@ function init() {
             console.log(response.data.url);
             
             fs.writeFile("README.md", generateMarkdown = 
-            `
-            # ${questions.title} README \n
-            ## **${questions.github}** \n
-            # User Profile ${response.data.avatar_url} \n
-            # App Description \n
-             ${questions.description}\n
-            ## ** Email**\n
-            ${questions.email}\n
-            ## Table of Contents \n
-             ${questions.contents}\n
-             ### Installation guide \n
-             ${questions.installation}\n
-             ## Contributors \n
-             ${questions.contributors}\n
-             ## Testing \n
-             ${questions.test}\n
-             ## Questions \n
-             ${questions.questions}
-            `, 
+`
+# ${questions.title} README \n
+## **${questions.github}** \n
+# User Profile ${response.data.avatar_url} \n
+# App Description \n
+ ${questions.description}\n
+## ** Email**\n
+${questions.email}\n
+## Table of Contents \n
+${questions.contents}\n
+### Installation guide \n
+${questions.installation}\n
+## Contributors \n
+${questions.contributors}\n
+## Testing \n
+${questions.test}\n
+## Questions \n
+${questions.questions}
+`, 
             
             function(err) {
 
